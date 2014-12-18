@@ -10,4 +10,11 @@
  
 
 alert('loading');
-alert(window);
+
+// set up touch event on document
+window.document.addEventListener("touchstart", function(evt){
+  alert('hello world', evt);
+}, false);
+
+alert('was loaded');
+console.log('hidden');
