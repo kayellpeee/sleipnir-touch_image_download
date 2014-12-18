@@ -12,7 +12,7 @@
 alert('loading');
 
 // set up touch event on document
-window.document.addEventListener("touchstart", function(evt){
+window.document.getElementsByClassName("alert alert-success")[0].addEventListener("touchstart", function(evt){
   alert('hello world', evt);
 }, false);
 
