@@ -9,9 +9,14 @@
 // ==/UserScript==
  
 
+alert('loading');
+
 // set up touch event on document
-window.document.addEventListener('touchstart', function(evt){
-  alert('hello world', evt);
-}, false);
+document.addEventListener("DOMContentLoaded", function(){
+  window.document.addEventListener("touchstart", function(evt){
+    alert('hello world', evt);
+  }, false);
+});
 
 alert('was loaded');
+console.log('hidden');
