@@ -11,4 +11,8 @@
 
 alert('loading');
 
+window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
+  alert('hello world');
+}, false);
+
 alert('was loaded');
