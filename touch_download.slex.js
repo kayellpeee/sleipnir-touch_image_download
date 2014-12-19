@@ -11,6 +11,6 @@
 var title = window.document.getElementsByTagName('h3')[0];
 
 title.addEventListener("touchstart", function(evt){
-  var touches = evt.changedTouches;
+  var touches = evt.touches;
   title.textContent = touches.length;
 }, false);
