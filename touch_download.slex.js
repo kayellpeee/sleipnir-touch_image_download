@@ -8,9 +8,10 @@
 // @version         0.1
 // ==/UserScript==
  
+var title = window.document.getElementsByTagName('h3')[0];
 
-window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
+title.addEventListener("touchstart", function(evt){
   evt.preventDefault();
   var touches = evt.changedTouches;
-  alert(touches.length);
+  title.textContent = touches.length;
 }, false);
