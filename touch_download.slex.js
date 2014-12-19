@@ -10,7 +10,7 @@
  
 var images = window.document.getElementsByTagName('img');
 
-images.forEach(function(node){
+Array.prototype.forEach.call(images, function(node){
   node.addEventListener("touchstart", function(evt){
     var touches = evt.touches;
     if( touches.length === 2 ){
