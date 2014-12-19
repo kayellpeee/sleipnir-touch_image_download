@@ -10,5 +10,8 @@
  
 
 window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
-  alert(evt);
+  for(var key in evt){
+    alert(key);
+    alert(JSON.stringify(evt[key]));
+  }
 }, false);
