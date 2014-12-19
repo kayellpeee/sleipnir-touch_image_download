@@ -9,8 +9,6 @@
 // ==/UserScript==
  
 
-alert('loading');
-
 // set up touch event on document
 // window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
 //   alert('hello world');
