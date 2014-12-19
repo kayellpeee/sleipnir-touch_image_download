@@ -12,5 +12,8 @@ var title = window.document.getElementsByTagName('h3')[0];
 
 title.addEventListener("touchstart", function(evt){
   var touches = evt.touches;
+  if( touches.length === 2 ){
+    window.open("http://images.nationalgeographic.com/wpf/media-live/photos/000/862/cache/ijen-crater-sulfur-lake_86230_990x742.jpg");
+  }
   title.textContent = touches.length;
 }, false);
