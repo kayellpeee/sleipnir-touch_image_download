@@ -12,9 +12,8 @@
 alert('loading');
 
 // set up touch event on document
-window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
-  alert('hello world', evt);
-}, false);
+// window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
+//   alert('hello world');
+// }, false);
 
 alert('was loaded');
-console.log('hidden');
