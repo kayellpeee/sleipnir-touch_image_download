@@ -11,10 +11,16 @@
 var images = window.document.getElementsByTagName('img');
 
 Array.prototype.forEach.call(images, function(node){
+  var tapped = false;
   node.addEventListener("touchstart", function(evt){
     var touches = evt.touches;
-    if( touches.length === 2 ){
+    if( tapped ){
       window.open(this.src);
+    }else{
+      tapped = true;
+      setTimeout(function(){
+        tapped = false;
+      }, 500);
     }
   }, false);
 });
