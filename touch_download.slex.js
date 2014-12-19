@@ -8,13 +8,13 @@
 // @version         0.1
 // ==/UserScript==
  
-var image = window.document.getElementsByTagName('img')[0];
+var images = window.document.getElementsByTagName('img');
 
-
-image.addEventListener("touchstart", function(evt){
-  var touches = evt.touches;
-  if( touches.length === 2 ){
-    window.open(this.src);
-  }
-}, false);
-
+images.forEach(function(node){
+  node.addEventListener("touchstart", function(evt){
+    var touches = evt.touches;
+    if( touches.length === 2 ){
+      window.open(this.src);
+    }
+  }, false);
+});
