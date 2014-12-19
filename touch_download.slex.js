@@ -9,10 +9,6 @@
 // ==/UserScript==
  
 
-alert('loading');
-
 window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
-  alert('hello world');
+  alert(evt);
 }, false);
-
-alert('was loaded');
