@@ -10,8 +10,9 @@
  
 
 window.document.getElementsByTagName('h3')[0].addEventListener("touchstart", function(evt){
-  for(var key in evt){
+  var touches = evt.changedTouches;
+  for(var key in touches){
     alert(key);
-    alert(JSON.stringify(evt[key]));
+    alert(touches[key]);
   }
 }, false);
